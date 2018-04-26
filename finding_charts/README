@@ -1,5 +1,8 @@
 (Kevin Hainline wrote most of this, I just cleaned some things up.)
 
+*Important* These scripts may not generate accurate position angles
+far from the equatorial plane!
+
 The main script is SALT_Finder_Chart.pl, which takes one argument that
 is the name of a file with some information on the targets.
 
