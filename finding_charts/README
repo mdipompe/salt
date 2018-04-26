@@ -1,0 +1,20 @@
+(Kevin Hainline wrote most of this, I just cleaned some things up.)
+
+The main script is SALT_Finder_Chart.pl, which takes one argument that
+is the name of a file with some information on the targets.
+
+One main purpose of all of this is the interactive position angle
+setting tool Kevin made. For each source, you'll see a field
+cutout and can interact with it to choose an ideal position angle setting.
+
+Note that there are two lines you may need to edit, depending on your
+IDL installation (lines 97 and 391). These need to have the correct
+full path to your IDL binary. If you know Perl better than me, you
+could probably make this easier with an environment variable.
+
+The IDL code make_chart_input will take your object names, ra, dec, the SALT
+program number, and PI name, and spit out a file suitable for passing to
+SALT_Finder_Chart.pl.
+
+You can run it using:
+perl SALT_Finder_Chart.pl target_info_file.txt

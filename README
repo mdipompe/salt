@@ -1,0 +1,20 @@
+These IDL scripts are meant to simplify preparing observations (Phase 1 and 2)
+with SALT. They were primarily written with optical spectroscopy in mind,
+but could be modified for a range of uses.
+
+target_pipt_upload.pro is meant to take your target information
+(positions, names, etc) and other information and write a file
+formatted for bulk upload into Phase 1 or 2 proposals. See the file header
+for more.
+
+make_blocks.pro will take source information, finding chart paths/filenames,
+position angles, etc. and build set of block files for batch upload in Phase 2.
+It will start with the file block_template.xml, which you can tweak to have
+a setup as close to what you want for most of your targets. See the file
+header for more.
+
+In the directory finding_charts, there are several Perl and IDL scripts for
+making finding charts for RSS. These were primarly written with having an
+interactive way to figure out ideal position angles for your targets. See
+the README within that directory for more.
+
