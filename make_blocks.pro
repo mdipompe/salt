@@ -79,8 +79,5 @@ PRO make_blocks,name,ra,dec,chartpath,outdir=outdir,pos_ang=pos_ang
      free_lun,lun2
   ENDFOR
   
-  
-
-  stop
 END
 

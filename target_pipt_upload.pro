@@ -82,5 +82,4 @@ PRO target_pipt_upload,name,ra,dec,outfile,epoch=epoch,mag=mag,band=band,obj_typ
   ENDFOR
   free_lun,lun
 
-  stop
 END
